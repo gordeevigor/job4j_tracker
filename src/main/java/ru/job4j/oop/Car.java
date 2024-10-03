@@ -1,6 +1,7 @@
 package ru.job4j.oop;
 
 public class Car {
+
     private String brand;
     private String model;
 
