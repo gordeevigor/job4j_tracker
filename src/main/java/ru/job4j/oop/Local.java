@@ -7,7 +7,7 @@ public class Local {
         final String surname = "Arsentev";
 
         class FullName {
-            public void printFullName() {
+             public void printFullName() {
                 System.out.println(name + " " + surname);
             }
         }
