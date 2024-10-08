@@ -25,7 +25,7 @@ public class Library {
         System.out.print(System.lineSeparator());
         System.out.println("Let's show the books with \"Clean code\" name:");
         for (Book book : books) {
-            if (book.getName().equals("Clean code")) {
+            if ("Clean code".equals(book.getName())) {
                 System.out.println("\tThe book \"" + book.getName() + "\" has " + book.getCount() + " pages");
             }
         }
