@@ -11,6 +11,7 @@ public class Shop {
                 System.out.println(product.getName());
             }
         }
+        System.out.println(indexOfNull(products));
     }
 
     public static int indexOfNull(Product[] products) {
