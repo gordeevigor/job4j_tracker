@@ -22,4 +22,9 @@ public class Tracker {
         }
         return rsl;
     }
+
+    public Item[] findAll() {
+        Item[] result = items;
+        return result;
+    }
 }
