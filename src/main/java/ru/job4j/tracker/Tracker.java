@@ -48,4 +48,15 @@ public class Tracker {
         }
         return Arrays.copyOf(result, size);
     }
+
+    private int indexOf(int id) {
+        int result = -1;
+        for (int i = 0; i < size; i++) {
+            if (items[i].getId() == id) {
+                result = i;
+                break;
+            }
+        }
+        return result;
+    }
 }
