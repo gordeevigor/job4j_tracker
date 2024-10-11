@@ -18,5 +18,9 @@ public class DropArray {
         for (int index = 0; index < result.length; index++) {
             System.out.println(result[index]);
         }
+        System.out.print(System.lineSeparator());
+        String[] firstNames = {"Petr", null, "Ivan", "Stepan", "Fedor"};
+        System.arraycopy(firstNames, 2, firstNames, 1, 3);
+        System.out.println(Arrays.toString(firstNames));
     }
 }
