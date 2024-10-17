@@ -9,9 +9,9 @@ public class ConcatTest {
         }
         System.out.println("Миллисекунд: " + (System.currentTimeMillis() - startTime));
         long startTime1 = System.currentTimeMillis();
-        StringBuilder string1 = new StringBuilder("Job4J");
+        StringBuilder builder = new StringBuilder("Job4J");
         for (int i = 0; i < 9999; i++) {
-            string1.append(i);
+            builder.append(i);
         }
         System.out.println("Миллисекунд: " + (System.currentTimeMillis() - startTime1));
     }
