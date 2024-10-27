@@ -11,5 +11,8 @@ public class Main {
         vehicle.steer();
         fuel.refill();
         Vehicle.getDragCoefficient();
+        Bus bus = new Bus();
+        int cost = bus.refuel(30);
+        System.out.println("Потрачено: " + cost);
     }
 }
