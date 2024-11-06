@@ -7,7 +7,6 @@ import ru.job4j.tracker.input.MockInput;
 import ru.job4j.tracker.output.ConsoleOutput;
 import ru.job4j.tracker.output.Output;
 import ru.job4j.tracker.output.StubOutput;
-
 import static org.assertj.core.api.Assertions.*;
 
 class StartUiTest {
