@@ -7,7 +7,11 @@ public class JdbcConfig {
         }
     }
 
-    public static void main(String[] args) throws UserInputException {
-        load("jdbc://localhost:8080");
+    public static void main(String[] args) {
+        try {
+            load("jdbc://localhost:8080");
+        } catch (UserInputException e) {
+            e.printStackTrace();
+        }
     }
 }
