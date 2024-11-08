@@ -22,7 +22,7 @@ public class UserStore {
         User[] users = {new User("Petr Arsentev", true)};
         String login = "Petr Arsentev";
         try {
-            User user = findUser(users, login); // Найденного пользователя передаем в validate
+            User user = findUser(users, login);
             validate(user);
             System.out.println("Found user \"" + login + "\" in status: " + user.isValid());
         } catch (UserInvalidException ue) {
