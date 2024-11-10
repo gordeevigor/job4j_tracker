@@ -14,4 +14,30 @@ class ValidateInputTest {
         int selected = input.askInt("Enter menu:");
         assertThat(selected).isEqualTo(1);
     }
+
+    @Test
+    void whenSingleValidInput() {
+        Output output = new StubOutput();
+        Input in = new MockInput(new String[] {"1"});
+        ValidateInput input = new ValidateInput(output, in);
+        int selected = input.askInt("Enter menu:");
+        assertThat(selected).isEqualTo(1);
+    }
+
+    @Test
+    void whenMultipleValidInput() {
+        Output output = new StubOutput();
+        Input in = new MockInput(new String[] {"1", "2", "45", "-8", "0"});
+        ValidateInput input = new ValidateInput(output, in);
+        int selected = input.askInt("Enter menu:");
+        assertThat(selected).isEqualTo(1);
+        selected = input.askInt("Enter menu:");
+        assertThat(selected).isEqualTo(2);
+        selected = input.askInt("Enter menu:");
+        assertThat(selected).isEqualTo(45);
+        selected = input.askInt("Enter menu:");
+        assertThat(selected).isEqualTo(-8);
+        selected = input.askInt("Enter menu:");
+        assertThat(selected).isEqualTo(0);
+    }
 }
