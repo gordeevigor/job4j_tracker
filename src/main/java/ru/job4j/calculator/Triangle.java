@@ -1,6 +1,6 @@
 package ru.job4j.calculator;
 
-public class Triangle {
+public class Triangle implements Shape {
     int a;
     int h;
 
@@ -9,6 +9,7 @@ public class Triangle {
         this.h = h;
     }
 
+    @Override
     public String draw() {
         String ln = System.lineSeparator();
         return    "   *" + ln
@@ -17,6 +18,7 @@ public class Triangle {
                 + "*******";
     }
 
+    @Override
     public double square() {
         return 0.5 * a * h;
     }

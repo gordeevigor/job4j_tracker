@@ -1,6 +1,6 @@
 package ru.job4j.calculator;
 
-public class Rectangle {
+public class Rectangle implements Shape {
     int a;
     int b;
 
@@ -9,6 +9,7 @@ public class Rectangle {
         this.b = b;
     }
 
+    @Override
     public String draw() {
         String ln = System.lineSeparator();
         return "******" + ln
@@ -17,6 +18,7 @@ public class Rectangle {
                 + "******";
     }
 
+    @Override
     public double square() {
         return a * b;
     }
